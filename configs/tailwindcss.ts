@@ -10,6 +10,10 @@ export default {
     ],
     theme: {
       extend: {
+        fontFamily: {
+          'caveat': ['Caveat'],
+          'luckiest-guy': ['Luckiest Guy'],
+        },
         colors: {
           'primary': 'rgb(var(--primary))',
           'primary-inverse': 'rgb(var(--primary-inverse))',

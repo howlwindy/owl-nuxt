@@ -1,6 +1,12 @@
 import type { NuxtConfig } from '@nuxt/schema'
 
 export default {
+  detectBrowserLanguage: {
+    useCookie: true,
+    alwaysRedirect: true,
+    cookieKey: 'i18n_redirected',
+    redirectOn: 'root',
+  },
   defaultLocale: 'en-US',
   locales: [
     { code: 'en-US', name: 'English' },

@@ -1,4 +1,4 @@
-import { colorMode, content, css, delayHydration, i18n, primevue, seo, studio, tailwindcss, unlighthouse, vite } from './configs'
+import { colorMode, css, delayHydration, directus, fonts, i18n, lodash, pinia, primevue, pwa, runtimeConfig, tailwindcss, vite } from './configs'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -29,26 +29,24 @@ export default defineNuxtConfig({
   // ignorePrefix,
   // imports,
   // logLevel,
-  modules: [
+  modules: [// "@nuxt/scripts",
     ['nuxt-delay-hydration', delayHydration],
-    // "@nuxt/scripts",
-    ['@nuxtjs/i18n', i18n],
-    // "@pinia/nuxt",
     // '@vueuse/nuxt',
-    // // "@nuxt/image",
-    ['@nuxtjs/seo', seo],
+    ['@nuxtjs/i18n', i18n], // "@nuxt/image",
+    // ['@nuxtjs/seo', seo],
     // '@nuxt/test-utils/module',
-    ['@nuxt/content', content],
-    ['@nuxthq/studio', studio],
-    // "@nuxt/fonts",
-    // "@vite-pwa/nuxt",
+    // ['@nuxt/content', content],
+    // ['@nuxthq/studio', studio],
     // '@unlighthouse/nuxt',
-    '@pinia/nuxt',
+    ['@nuxt/fonts', fonts],
+    ['@vite-pwa/nuxt', pwa], // ['@unlighthouse/nuxt', unlighthouse],
+    ['@pinia/nuxt', pinia],
     '@pinia-plugin-persistedstate/nuxt',
-    ['@unlighthouse/nuxt', unlighthouse],
     ['nuxt-primevue', primevue],
     ['@nuxtjs/tailwindcss', tailwindcss],
-    ['@nuxtjs/color-mode', colorMode],
+    ['@nuxtjs/color-mode', colorMode], // ['@nuxtjs/strapi', strapi],
+    ['nuxt-lodash', lodash],
+    ['nuxt-directus', directus],
   ],
   // modulesDir,
   // nitro,

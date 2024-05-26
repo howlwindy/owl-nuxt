@@ -1,8 +1,8 @@
 import type { NuxtConfig } from '@nuxt/schema'
 
 export default {
-  apiScrect: '',
+  // apiScrect: '',
   public: {
-    apiBase: '/api',
+    // apiBase: '/api',
   },
 } as NuxtConfig['runtimeConfig']
