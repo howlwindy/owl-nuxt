@@ -56,7 +56,7 @@ export default defineNuxtConfig({
   // rootDir,
   // routeRules,
   // router,
-  // runtimeConfig,
+  runtimeConfig,
   // serverDir,
   // serverHandlers,
   // sourcemap,

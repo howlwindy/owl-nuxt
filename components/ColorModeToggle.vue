@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const store = useUserStore()
 const options = ref([
   { label: 'Light', value: 'light' },
   { label: 'Dark', value: 'dark' },
@@ -15,7 +14,6 @@ const options = ref([
       :options="options"
       option-label="label"
       option-value="value"
-      @change="store.preference = $colorMode.preference"
     />
   </ColorScheme>
 </template>

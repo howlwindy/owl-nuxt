@@ -7,7 +7,7 @@ interface IGlobal {
 }
 const { getSingletonItem } = useDirectusItems()
 const { locale } = useI18n()
-const { data } = await useAsyncData(
+const { data } = await useLazyAsyncData(
   'global',
   async () => await getSingletonItem<IGlobal[]>({
     collection: 'global_translations',
